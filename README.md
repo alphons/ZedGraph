@@ -10,5 +10,5 @@ ZedGraph is a class library, user control, and web control for .net, written in 
 
 ## Download
 
-ZedGraph is available via NuGet:
+ZedGraph6 is available via NuGet:
 - [ZedGraph](http://nuget.org/packages/ZedGraph6)
