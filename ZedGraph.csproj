@@ -9,20 +9,30 @@
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
     <FileVersion>6.0.0.0</FileVersion>
     <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>zedgraphkey.snk</AssemblyOriginatorKeyFile>
-    <Title>ZedGraph Library</Title>
-    <Description>ZedGraph Library</Description>
+    <Title>ZedGraph6 Library</Title>
+    <Description>ZedGraph6 is a fork of ZedGraph plus the DynFilteredPointList class. ZedGraph is a class library and user control for .Net, written in C#, for drawing 2D Line, Bar, and Pie Charts. It features full, detailed customization capabilities, but most options have defaults for ease of use.</Description>
     <Copyright>Copyright © 2003-2007 John Champion</Copyright>
     <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
     <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
     <EnableNETAnalyzers>False</EnableNETAnalyzers>
     <NeutralLanguage>en</NeutralLanguage>
     <Version>$(VersionPrefix)6.0.0</Version>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/LimeyDev/ZedGraph</PackageProjectUrl>
+    <Authors>John Champion and Ingineer.</Authors>
+    <AssemblyName>ZedGraph6</AssemblyName>
+    <AssemblyOriginatorKeyFile>ZedGraph6Key.snk</AssemblyOriginatorKeyFile>
+    <PackageIcon>ZG6icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="ZG6icon.png" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Settings.Designer.cs">
@@ -40,6 +50,14 @@
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="ZG6icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
