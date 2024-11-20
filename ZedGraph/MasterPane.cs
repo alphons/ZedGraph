@@ -397,7 +397,7 @@ namespace ZedGraph
 		/// Respond to the callback when the MasterPane objects are fully initialized.
 		/// </summary>
 		/// <param name="sender"></param>
-		public void OnDeserialization(object? sender)
+		public void OnDeserialization(object sender)
 		{
 			Bitmap bitmap = new Bitmap( 10, 10 );
 			Graphics g = Graphics.FromImage( bitmap );

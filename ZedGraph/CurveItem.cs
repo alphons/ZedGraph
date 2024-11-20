@@ -171,7 +171,7 @@ namespace ZedGraph
 		/// <param name="label">A string label (legend entry) for this curve</param>
 		/// <param name="points">A <see cref="IPointList"/> of double precision value pairs that define
 		/// the X and Y values for this curve</param>
-		public CurveItem( string label, IPointList? points )
+		public CurveItem( string label, IPointList points )
 		{
 			Init( label );
 
@@ -1174,7 +1174,7 @@ namespace ZedGraph
 			/// <param name="l">Curve to the left.</param>
 			/// <param name="r">Curve to the right.</param>
 			/// <returns>-1, 0, or 1 depending on l.X's relation to r.X</returns>
-			public int Compare( CurveItem? l, CurveItem? r ) 
+			public int Compare( CurveItem l, CurveItem r ) 
 			{
 				if (l == null && r == null )
 					return 0;

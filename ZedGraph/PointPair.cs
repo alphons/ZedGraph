@@ -393,7 +393,7 @@ namespace ZedGraph
 			/// <param name="l">Point to the left.</param>
 			/// <param name="r">Point to the right.</param>
 			/// <returns>-1, 0, or 1 depending on l.Y's relation to r.Y</returns>
-			public int Compare( PointPair? l, PointPair? r )
+			public int Compare( PointPair l, PointPair r )
 			{
 				if ( l == null && r == null )
 				{
@@ -442,7 +442,7 @@ namespace ZedGraph
 			/// <param name="l">Point to the left.</param>
 			/// <param name="r">Point to the right.</param>
 			/// <returns>-1, 0, or 1 depending on l.X's relation to r.X</returns>
-			public int Compare( PointPair? l, PointPair? r )
+			public int Compare( PointPair l, PointPair r )
 			{
 				if ( l == null && r == null )
 					return 0;

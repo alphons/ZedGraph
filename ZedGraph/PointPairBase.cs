@@ -218,7 +218,7 @@ namespace ZedGraph
 		/// </summary>
 		/// <param name="obj">The <see cref="PointPairBase"/> object to be compared with.</param>
 		/// <returns>true if the <see cref="PointPairBase"/> objects are equal, false otherwise</returns>
-		public override bool Equals( object? obj )
+		public override bool Equals( object obj )
 		{
 			PointPairBase rhs = obj as PointPairBase;
 			return this.X == rhs.X && this.Y == rhs.Y;

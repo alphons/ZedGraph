@@ -1,8 +1,8 @@
-# ZedGraph6
+# ZedGraph
 
-*The charting library for .NET*
+*The charting library for .NET Core*
 
-created by John Champion, modified by Ingineer to include DynFilteredPointList and target .Net 6.
+created by John Champion, modified by Ingineer to include DynFilteredPointList and target .Net 8.
 
 forked from https://sourceforge.net/projects/zedgraph/
 
@@ -10,5 +10,5 @@ ZedGraph is a class library, user control, and web control for .net, written in 
 
 ## Download
 
-ZedGraph6 is available via NuGet:
-- [ZedGraph6](http://nuget.org/packages/ZedGraph6)
+ZedGraph is available via NuGet:
+- [ZedGraph](http://nuget.org/packages/ZedGraph)

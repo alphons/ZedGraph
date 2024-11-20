@@ -1,64 +1,43 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <UseWindowsForms>true</UseWindowsForms>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
-    <FileVersion>6.0.0.0</FileVersion>
-    <SignAssembly>True</SignAssembly>
-    <Title>ZedGraph6 Library</Title>
-    <Description>ZedGraph6 is a fork of ZedGraph plus the DynFilteredPointList class. ZedGraph is a class library and user control for .Net, written in C#, for drawing 2D Line, Bar, and Pie Charts. It features full, detailed customization capabilities, but most options have defaults for ease of use.</Description>
-    <Copyright>Copyright © 2003-2007 John Champion</Copyright>
-    <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
-    <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
-    <EnableNETAnalyzers>False</EnableNETAnalyzers>
-    <NeutralLanguage>en</NeutralLanguage>
-    <Version>$(VersionPrefix)6.0.0</Version>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <PackageProjectUrl>https://github.com/LimeyDev/ZedGraph</PackageProjectUrl>
-    <Authors>John Champion and Ingineer.</Authors>
-    <AssemblyName>ZedGraph6</AssemblyName>
-    <AssemblyOriginatorKeyFile>ZedGraph6Key.snk</AssemblyOriginatorKeyFile>
-    <PackageIcon>ZG6icon.png</PackageIcon>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>disable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<AssemblyVersion>8.0.0.1</AssemblyVersion>
+		<FileVersion>8.0.0.1</FileVersion>
+		<SignAssembly>True</SignAssembly>
+		<Title>ZedGraph .NET Core Library</Title>
+		<Description>ZedGraph is a fork of ZedGraph plus the DynFilteredPointList class. ZedGraph is a class library and user control for .Net Core, written in C#, for drawing 2D Line, Bar, and Pie Charts. It features full, detailed customization capabilities, but most options have defaults for ease of use.</Description>
+		<Copyright>Copyright © 2003-2007 John Champion</Copyright>
+		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+		<EnableNETAnalyzers>False</EnableNETAnalyzers>
+		<NeutralLanguage>en</NeutralLanguage>
+		<Version>$(VersionPrefix)0.0.1</Version>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageProjectUrl>https://github.com/alphons/ZedGraph</PackageProjectUrl>
+		<Authors>John Champion,Ingineer and Alphons van der Heijden.</Authors>
+		<AssemblyName>ZedGraph8</AssemblyName>
+		<AssemblyOriginatorKeyFile>ZedGraphKey.snk</AssemblyOriginatorKeyFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DebugType>embedded</DebugType>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>embedded</DebugType>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Resource Include="ZG6icon.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Properties\Settings.Designer.cs">
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="LICENSE.txt">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Update="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <None Update="README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Update="ZG6icon.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Update="LICENSE.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Update="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
 </Project>
