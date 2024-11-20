@@ -1,4 +1,4 @@
-# ZedGraph
+# ZedGraph8
 
 *The charting library for .NET Core*
 
@@ -11,4 +11,4 @@ ZedGraph is a class library, user control, and web control for .net, written in 
 ## Download
 
 ZedGraph is available via NuGet:
-- [ZedGraph](http://nuget.org/packages/ZedGraph)
+- [ZedGraph](http://nuget.org/packages/ZedGraph8)
