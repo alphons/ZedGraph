@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net8.0-windows</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<Nullable>disable</Nullable>
-		<UseWindowsForms>true</UseWindowsForms>
+		<UseWindowsForms>false</UseWindowsForms>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<AssemblyVersion>8.0.0.1</AssemblyVersion>
-		<FileVersion>8.0.0.1</FileVersion>
+		<AssemblyVersion>8.0.0.2</AssemblyVersion>
+		<FileVersion>8.0.0.2</FileVersion>
 		<SignAssembly>True</SignAssembly>
 		<Title>ZedGraph .NET Core Library</Title>
 		<Description>ZedGraph is a fork of ZedGraph plus the DynFilteredPointList class. ZedGraph is a class library and user control for .Net Core, written in C#, for drawing 2D Line, Bar, and Pie Charts. It features full, detailed customization capabilities, but most options have defaults for ease of use.</Description>
@@ -16,7 +16,7 @@
 		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 		<EnableNETAnalyzers>False</EnableNETAnalyzers>
 		<NeutralLanguage>en</NeutralLanguage>
-		<Version>$(VersionPrefix)0.0.1</Version>
+		<Version>$(VersionPrefix)0.0.2</Version>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<PackageProjectUrl>https://github.com/alphons/ZedGraph</PackageProjectUrl>
 		<Authors>John Champion,Ingineer and Alphons van der Heijden.</Authors>
@@ -28,6 +28,32 @@
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 		<DebugType>embedded</DebugType>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="ZedGraph\DataSourcePointList.cs" />
+	  <Compile Remove="ZedGraph\ZedGraphControl.ContextMenu.cs" />
+	  <Compile Remove="ZedGraph\ZedGraphControl.cs" />
+	  <Compile Remove="ZedGraph\ZedGraphControl.Designer.cs" />
+	  <Compile Remove="ZedGraph\ZedGraphControl.Events.cs" />
+	  <Compile Remove="ZedGraph\ZedGraphControl.Printing.cs" />
+	  <Compile Remove="ZedGraph\ZedGraphControl.Properties.cs" />
+	  <Compile Remove="ZedGraph\ZedGraphControl.ScrollBars.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="ZedGraph\DataSourcePointList.cs" />
+	  <None Include="ZedGraph\ZedGraphControl.ContextMenu.cs" />
+	  <None Include="ZedGraph\ZedGraphControl.cs" />
+	  <None Include="ZedGraph\ZedGraphControl.Designer.cs" />
+	  <None Include="ZedGraph\ZedGraphControl.Events.cs" />
+	  <None Include="ZedGraph\ZedGraphControl.Printing.cs" />
+	  <None Include="ZedGraph\ZedGraphControl.Properties.cs" />
+	  <None Include="ZedGraph\ZedGraphControl.ScrollBars.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Windows.Compatibility" Version="9.0.0" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<None Update="LICENSE.txt">

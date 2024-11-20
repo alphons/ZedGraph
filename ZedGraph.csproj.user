@@ -4,23 +4,23 @@
     <_LastSelectedProfileId>C:\git\ZedGraph\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="ZedGraph\ZedGraphControl.ContextMenu.cs">
+    <None Update="ZedGraph\ZedGraphControl.ContextMenu.cs">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="ZedGraph\ZedGraphControl.cs">
+    </None>
+    <None Update="ZedGraph\ZedGraphControl.cs">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="ZedGraph\ZedGraphControl.Events.cs">
+    </None>
+    <None Update="ZedGraph\ZedGraphControl.Events.cs">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="ZedGraph\ZedGraphControl.Printing.cs">
+    </None>
+    <None Update="ZedGraph\ZedGraphControl.Printing.cs">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="ZedGraph\ZedGraphControl.Properties.cs">
+    </None>
+    <None Update="ZedGraph\ZedGraphControl.Properties.cs">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="ZedGraph\ZedGraphControl.ScrollBars.cs">
+    </None>
+    <None Update="ZedGraph\ZedGraphControl.ScrollBars.cs">
       <SubType>UserControl</SubType>
-    </Compile>
+    </None>
   </ItemGroup>
 </Project>
